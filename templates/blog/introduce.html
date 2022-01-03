@@ -1,0 +1,52 @@
+{% load static %}
+{% include 'navbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>introduce</title>
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/intro_style.css' %}">
+</head>
+<body>
+<div style="margin: 30px; font-size:2em;">
+    <nav>
+        C조 : <a href="{% url 'blog:introduce' %}">박정재</a> |
+        <a href="{% url 'blog:introduce2' %}">김홍연</a> |
+        <a href="{% url 'blog:introduce3' %}">김진희</a> |
+        <a href="{% url 'blog:introduce4' %}">백송희</a>
+    </nav>
+</div>
+        <section>
+            <hr>
+            <div class="contaiter">
+                <div class="icon">
+                <img src="{% static 'blog/images/premium-icon-male-student-2940654.png' %}">
+                </div>
+                <div class="mini_icon">
+                    <div class="phone">
+                    <p id = 'explain' style="font-weight:bold; font-size:18px; color:skyblue;">010-2736-0634</p>
+                    <img src="{% static 'blog/images/free-icon-telephone-symbol-button-25377.png' %}" id="icon1">
+                    </div>
+                    <div class="mail">
+                    <p id = 'explain2' style="font-weight:bold; font-size:18px; color:skyblue;">ind01158@naver.com</p>
+                    <img src="{% static 'blog/images/premium-icon-mails-3711222.png' %}"id="icon2">
+                    </div>
+                    <a href="https://github.com/parkjj94" target="_blank">
+                    <img src="{% static 'blog/images/free-icon-github-5968866.png' %}"id="icon3"></a>
+
+                </div>
+            </div>
+            <div class="text">
+            <h4>박정재</h4>
+            <h4>나이 : 28</h4><br>
+            <h4>관련 경력 : <mark>신입</mark> / 경력</h4><br>
+            <h4>학력</h4><br>
+                <ul>
+                    <li>인제고등학교 졸업</li>
+                    <li>성결대학교 유통물류학과 졸업</li>
+                </ul>
+            </div>
+        </section>
+</body>
+</html>

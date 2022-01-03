@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<section>
+    {% if post_list %} <!-- 포스트가 있다면 -->
+        {% for post in post_list %}
+            <hr>
+            <h4>{{ post.title }}</h4>
+            <h5>{{ post.pub_date }}</h5>
+            <p style="white-space:pre-line">
+                {{ post.content }}
+            </p>
+            {% if post.photo %}
+                <img src="{{ post.photo.url }}">
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        <p>포스트가 없습니다.</p>
+    {% endif %}
+</section>
+{% endblock %}

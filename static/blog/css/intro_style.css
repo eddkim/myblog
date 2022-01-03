@@ -1,0 +1,23 @@
+/*이미지 전체 위치*/
+.container{position: absolute;}
+
+/*사진 위치*/
+.icon{display: flex; justify-content: center;}
+
+/*작은 이미지 위치*/
+.mini_icon{display: flex; justify-content: center;}
+#icon1{padding:10px;}
+#icon2{padding:10px;}
+#icon3{padding:10px;}
+
+/*transform:translate(20%, 20%)*/
+
+/*텍스트 위치*/
+.text{padding:10px; margin: 0 auto; width:300px; height: auto}
+
+/* 이미지 클릭시 텍스트*/
+#explain{ position: absolute; opacity: 0;}
+.phone:hover #explain{ opacity: 1; line-height; bottom:400px;}
+#explain2{ position: absolute; opacity: 0; }
+.mail:hover #explain2{ opacity: 1; line-height; bottom:400px;}
+

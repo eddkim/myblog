@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section>
+        <h2>포스트 등록</h2>
+        <form action="" method="post" enctype="multipart/form-data">
+        <!-- 일반 필드와 이미지필드로 멀티파트로 구성됨-->
+            {% csrf_token %}
+                {{ form.as_p }}
+            <button type="submit">저장하기</button>
+        </form>
+    </section>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C Team Blog Home</title>
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/style.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<!-- 기본 템플릿 안에 삽입될 내용 start -->
+{% block content %}
+    <!--내용-->
+{% endblock %}
+{% include 'footer.html' %}
+<!-- 기본 템플릿 안에 삽입될 내용 end -->
+<script src="{% static 'blog/js/jquery-3.6.0.js' %}"></script>
+<script src="{% static 'blog/js/bootstrap.js' %}"></script>
+{% block script %}
+   <!--자바스트립트(제이쿼리) 소스 -->
+{% endblock %}
+</body>
+</html>
